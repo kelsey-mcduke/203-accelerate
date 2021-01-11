@@ -48,3 +48,10 @@ Text Domain:  accelerate-theme-child
   color: #45ac9d;
   text-transform: uppercase;
 }
+
+/* CUSTOM PAGE STYLING */
+
+
+.case-study-sidebar h4 {
+  color: #BFBFBF;
+}
