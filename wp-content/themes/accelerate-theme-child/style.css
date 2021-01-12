@@ -50,8 +50,49 @@ Text Domain:  accelerate-theme-child
 }
 
 /* CUSTOM PAGE STYLING */
+.case-study {
+  max-width: 900px;
+}
 
+.case-study-sidebar {
+  float: left;
+  max-width: 40%;
+  padding-right: 30px;
+
+}
+
+.case-study-sidebar h2 {
+  font: 600 1.25em/1.75 'Open Sans', Arial, sans-serif;
+  line-height: 1;
+}
 
 .case-study-sidebar h4 {
+  font: 500 .75em/1.75 'Open Sans', Arial, sans-serif;
   color: #BFBFBF;
+  margin: 10px 0;
+  line-height: 1.25;
+}
+
+.case-study-sidebar h4 span {
+   color: #3b3b3b;
+}
+
+.case-study-sidebar p{
+  font: 500 1em/1.65 'Open Sans', Arial, sans-serif;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.case-study-sidebar .read-more-link {
+  font-weight: 700;
+}
+
+.case-study-images {
+  float: right;
+  max-width: 60%;
+  padding: 15px;
+}
+
+.case-study-images img {
+  width: 500px;
 }
