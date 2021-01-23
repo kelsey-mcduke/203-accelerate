@@ -135,7 +135,8 @@ Text Domain:  accelerate-theme-child
 .social-media-menu {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   width: 200px;
 }
 
@@ -146,14 +147,19 @@ Text Domain:  accelerate-theme-child
 
 }
 
-.social-media-menu li a {
+.social-media-menu .fa li a i {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.menu-item i._mi {
+  margin: 0;
   justify-content: center;
   align-items: center;
   background-color: #3b3b3b;
   border-radius: 50%;
-  padding: 10px 8px;
+  padding: 10px;
   color: #fff;
+  width: 35px;
+  height: 35px;
 }
-
-
-
