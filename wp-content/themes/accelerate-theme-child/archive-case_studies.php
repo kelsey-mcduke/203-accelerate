@@ -25,7 +25,7 @@ get_header(); ?>
         
         <article class="case-study">
  					<aside class="case-study-sidebar">
-						<h2><a href="<?php echo $link ?>"><?php the_title(); ?></a></h2>
+						<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<h4><?php echo $services ?></h4>
 						<h4><span>Client: <?php echo $client ?><span></h4>
 
@@ -36,7 +36,7 @@ get_header(); ?>
 				</aside>
 
 				  <div class="case-study-images">
-            <a href="<?php echo $link ?>">
+						<a href="<?php the_permalink(); ?>">
 						  <?php if ($image_1) {
                 echo wp_get_attachment_image($image_1, $size);
               } ?>
