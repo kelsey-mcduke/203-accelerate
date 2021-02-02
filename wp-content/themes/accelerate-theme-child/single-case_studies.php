@@ -14,6 +14,10 @@
 
 get_header(); ?>
 
+	<div class="overview">
+		<?php the_content(); ?>
+	</div>
+
 	<div id="primary" class="site-content sidebar">
 		<div class="main-content" role="main">
 			<?php while ( have_posts() ) : the_post(); 
@@ -24,14 +28,13 @@ get_header(); ?>
 				$image_2 = get_field('image_2');
 				$image_3 = get_field('image_3');
 				$size = "full"; ?>
+			
 
 				<article class="case-study">
  					<aside class="case-study-sidebar">
 						<h2><?php the_title(); ?></h2>
 						<h4><?php echo $services ?></h4>
 						<h4><span>Client: <?php echo $client ?><span></h4>
-
-						<?php the_content(); ?>
 
 
 						<p class="read-more-link"> <a href="<?php echo $link; ?>">Visit live site &rsaquo;</a></p>
