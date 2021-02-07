@@ -167,40 +167,31 @@ Text Domain:  accelerate-theme-child
 /* CONTACT PAGE STYLING */
 
 .contact .main-content {
-  width: 60%;
-  max-width: 630px;
   padding: 0 auto;
   margin: 0 auto;
   padding-top: 0;
 }
 .contact h2 {
-  font: 600 1.25em/1.75 'Open Sans', Arial, sans-serif;
+  font: 700 1.25em/1.75 'Open Sans', Arial, sans-serif;
 }
 
 .contact p {
   font: 400 1em/1.65 'Open Sans', Arial, sans-serif;
 }
 
-.contact .nf-form-content {
-  display: flex;
-}
-
-.contact nf-fields-wrap {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .contact nf-field {
-  width: 50%;
   padding-right: 10px;
   font-size: .875em;
 }
 
-#primary form  nf-field div#nf-field-3-container {
-  background-color: aqua;
-  width: 100%;
+.contact nf-field:nth-child(4) {
+  text-align: right;
+}
+
+.contact nf-field:nth-child(4) input{
+  width: 200px;
+  background-color: #45ac9d;
 }
 
 .contact .ninja-forms-req-symbol {
@@ -215,28 +206,19 @@ Text Domain:  accelerate-theme-child
   font: 400 1em/1.65 'Open Sans', Arial, sans-serif;
 }
 
-/* ABOUT PAGE STYLING */
+/* About Page Styling */
 
-.overview .about-us {
-  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+.overview {
+  background: url("img/taxi-photo.jpg") no-repeat scroll right bottom / cover rgba(0, 0, 0, 0);
   height: auto;
   margin: 0 0 5em;
-  padding: 8em 0;
-  color:#fff;
-}
-
-.overview .about-us {
+  padding: 5em 15em 8em 15em;
   text-align: center;
-  padding: 10em;
+  color: #fff;
+  font: 700 1.25em/1.75 'Open Sans', Arial, sans-serif;
 }
 
-.overview h2 {
-  text-align: center;
-}
-
-.overview  p {
-  padding-left: 10em;
-  padding-right: 10em;
+.service-info {
   text-align: center;
 }
 
@@ -245,17 +227,70 @@ Text Domain:  accelerate-theme-child
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  list-style-type: none;
 }
 
-.services-one {
-  width: 100%;
-  max-width: 960px;
+.services li:nth-of-type(2n+1) {
   display: flex;
-  flex-flow: row-reverse;
-
+  flex-flow: row wrap;
 }
 
-.services img {
-  width: 25%;
-  padding-right: 50px;
+.services li:nth-of-type(2n) {
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
+.services li figure {
+  padding: 3em;
+}
+
+.services .service-details {
+  width: 60%;
+  padding: 5px 15px;
+}
+
+ #navigation .contact-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-bar h2 {
+  padding: 70px 20px;
+  margin: 0;
+}
+
+.contact-bar a.button {
+  margin-left: 20px;
+}
+
+
+/* Desktop Styling - Media Queries */
+
+@media (min-width:800px) {
+  .contact .main-content {
+    width: 60%;
+    max-width: 630px;
+  }
+
+  .contact .nf-form-content {
+    display: flex;
+  }
+  
+  .contact nf-fields-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact nf-field {
+    width: 50%;
+  }
+
+  .contact nf-field:nth-child(3),
+  .contact nf-field:nth-child(4) {
+  width: 100%;
+  }
+
 }
