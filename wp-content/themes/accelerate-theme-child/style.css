@@ -24,10 +24,13 @@ Text Domain:  accelerate-theme-child
 .button {
   background: none repeat scroll 0 0  #45ac9d;
 }
+.recent-posts {
+  display: flex;
+  flex-flow: row wrap;
+}
 
 .blog-post {
-  width: 50%;
-  float: left;
+  width: 100%;
   margin-bottom: 2em;
 }
 
@@ -64,14 +67,36 @@ Text Domain:  accelerate-theme-child
 
 .featured-work ul {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
 }
 
 .featured-work ul li {
   list-style-type: none;
-  padding: 10px;
-  
+  width: 100%;
+}
+
+.twitter-feed {
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.twitter-feed h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 .5em;
+}
+
+.twitter-feed h3 {
+    font-size: 1.5em;
+}
+
+.follow-us-link {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  color: #45ac9d;
+  text-transform: uppercase;
 }
 
 /* CUSTOM PAGE STYLING */
@@ -264,10 +289,111 @@ Text Domain:  accelerate-theme-child
   margin-left: 20px;
 }
 
+/* Sidebar Form Styling */
+
+.mc4wp-form-fields p label {
+  font-weight: 700;
+}
+
+.mc4wp-form-fields p input[type=submit] {
+  background-color: #45ac9d;
+  padding-bottom: 30px;
+}
+
+/* 404 Page Styling */
+
+nav#primary-navigation {
+  text-align: center;
+}
+
+.p404-wrapper {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.p404-wrapper figcaption {
+  font: 400 .75em/1.25 'Open Sans', Arial, sans-serif;
+  padding: 5px 0;
+}
+
+.p404-main-img {
+  max-height: 600px;
+  width: 100%;
+}
+
+.p404-main-img figure {
+  text-align: center;
+  margin: 15px;
+}
+
+.p404-main-img img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 5px 10px 10px #45ac9d;
+}
+
+.p404-content {
+ width: 100%;
+ padding: 20px 15px;
+}
+
+.p404-content h1 {
+  font: 700 1.5em/2 'Amatic SC', 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #3b3b3b;
+  text-shadow: 2px 5px 3px #45ac9d;
+  text-align: center;
+  margin-top: 10px
+}
+
+.p404-content p {
+  font: 600 1.25em/1.75 'Amatic SC', 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #3b3b3b;
+}
+
+a.new-link {
+  font: 700 1em/1.25 'Amatic SC', 'Montserrat', 'Open Sans', Arial, sans-serif;
+  text-shadow: 2px 4px 2px #45ac9d;
+}
+
+.p404-img-right {
+  width: 100%;
+  text-align: center;
+}
+
+.p404-img-right img {
+  border-radius: 10%;
+  box-shadow: 5px 8px 15px #45ac9d;
+}
+
+.p404-img-full {
+  text-align: center;
+  padding: 15px 0;
+}
+
+.p404-img-full img {
+  border-radius: 10%;
+  box-shadow: 5px 8px 15px #45ac9d;
+}
 
 /* Desktop Styling - Media Queries */
 
 @media (min-width:800px) {
+  /* Homepage Styling */
+
+  .featured-work ul li {
+    width: 30%;
+  }
+
+  .recent-posts div.blog-post {
+    width: 45%;
+    margin-right: 0;
+  }
+
+  .recent-posts div.twitter-feed {
+    margin-right: 0;
+    width: 45%;
+  }
+  /* Contact Styling */
   .contact .main-content {
     width: 60%;
     max-width: 630px;
@@ -293,4 +419,22 @@ Text Domain:  accelerate-theme-child
   width: 100%;
   }
 
+  /* 404 Styling */
+
+  .p404-img-right {
+    width: 50%;
+  }
+
+  .p404-content {
+    width: 50%;
+    padding: 100px 15px;
+  }
+
+  .p404-content h1 {
+    font: 700 1.75em/2.75 'Open Sans', Arial, sans-serif;
+  }
+
+  .p404-main-img img{
+    width: 60%;
+  }
 }

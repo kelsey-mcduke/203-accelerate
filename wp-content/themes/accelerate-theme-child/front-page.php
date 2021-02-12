@@ -57,7 +57,29 @@ get_header(); ?>
 					<?php endwhile; ?>
 				<?php wp_reset_query(); ?>
 			</div><!-- .blog-post -->
+		
+			<div class="twitter-feed">
+				<h4>Recent Tweet</h4>
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+					<div id="secondary" class="widget-area" role="complementary">
+						<?php dynamic_sidebar( 'sidebar-2' ); ?>
+					</div>
+				<?php endif; ?>
+				<?php
+    			if (is_plugin_active('custom-twitter-feeds/custom-twitter-feed.php')) { ?>
+        	<a href="http://twitter.com/" class="follow-us-link">Follow Us<span> &rsaquo;</span></a>
+				<?php } ?>  
+			</div><!-- .twitter-feed -->
 		</div><!-- .site-content -->
 	</section>
 
 <?php get_footer(); ?>
+
+
+
+<!-- <?php
+    $stt_options = get_option('widget_pi_simpletwittertweets');
+    $twitter_handle = $stt_options[2]['name'];
+    if (isset($twitter_handle) && is_plugin_active('simple-twitter-tweets/simple-twitter-tweets.php')) { ?>
+        <a href="http://twitter.com/<?php echo $twitter_handle; ?>" class="follow-us-link">Follow Us<span> &rsaquo;</span></a>
+<?php } ?>  -->
