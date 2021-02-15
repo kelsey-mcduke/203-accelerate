@@ -24,7 +24,8 @@ Text Domain:  accelerate-theme-child
 .button {
   background: none repeat scroll 0 0  #45ac9d;
 }
-.recent-posts {
+
+.recent-posts .site-content{
   display: flex;
   flex-flow: row wrap;
 }
@@ -384,14 +385,13 @@ a.new-link {
     width: 30%;
   }
 
-  .recent-posts div.blog-post {
-    width: 45%;
-    margin-right: 0;
+  .blog-post {
+    width: 48%;
+    padding-right: 6em;
   }
 
-  .recent-posts div.twitter-feed {
-    margin-right: 0;
-    width: 45%;
+  .twitter-feed {
+    width: 48%;
   }
   /* Contact Styling */
   .contact .main-content {
